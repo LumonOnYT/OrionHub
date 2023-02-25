@@ -1,0 +1,78 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Script Menu", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionPSX"})
+
+local Scripts = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Scripts:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+		print("Successfully executed Infinite Yield.")
+		OrionLib:MakeNotification({
+			Name = "Executed",
+			Content = "Successfully Executed Infinite Yield",
+			Image = "rbxassetid://4483345998",
+			Time = 3
+		})
+    	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Scripts:AddButton({
+	Name = "Dex / Explorer",
+	Callback = function()
+		print("Successfully executed Dex.")
+		OrionLib:MakeNotification({
+			Name = "Executed",
+			Content = "Successfully executed Dex",
+			Image = "rbxassetid://4483345998",
+			Time = 3
+		})
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
+  	end    
+})
+
+Scripts:AddButton({
+	Name = "DomainX",
+	Callback = function()
+		print("Successfully executed DomainX.")
+		OrionLib:MakeNotification({
+			Name = "Executed",
+			Content = "Successfully executed DomainX",
+			Image = "rbxassetid://4483345998",
+			Time = 3
+		})
+    	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+  	end    
+})
+
+Scripts:AddButton({
+	Name = "CMD-X",
+	Callback = function()
+		print("Successfully executed CMD-X.")
+		OrionLib:MakeNotification({
+			Name = "Executed",
+			Content = "Successfully executed CMD-X",
+			Image = "rbxassetid://4483345998",
+			Time = 3
+		})
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+  	end    
+})
+
+Scripts:AddButton({
+	Name = "Secure Dark Dex",
+	Callback = function()
+		print("Successfully executed Secure Dark Dex.")
+		OrionLib:MakeNotification({
+			Name = "Executed",
+			Content = "Successfully executed Secure Dark Dex",
+			Image = "rbxassetid://4483345998",
+			Time = 3
+		})
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+  	end    
+})
